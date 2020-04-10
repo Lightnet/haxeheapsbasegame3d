@@ -1,0 +1,34 @@
+{
+	"sheets": [
+		{
+			"name": "characters",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "id"
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"opt": true
+				},
+				{
+					"typeStr": "1",
+					"name": "gender",
+					"opt": true
+				}
+			],
+			"lines": [
+				{
+					"id": "0",
+					"name": "test",
+					"gender": "male"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+	],
+	"customTypes": [],
+	"compress": false
+}

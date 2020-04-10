@@ -1,0 +1,33 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build.js.hxml",
+            "type": "shell",
+            "command": "haxe build.js.hxml",
+            //"group": {
+                //"kind": "build",
+                //"isDefault": true
+            //},
+            "problemMatcher": ["$haxe"]
+        },
+        {
+            "label": "build.hl.hxml",
+            "type": "shell",
+            "command": "haxe build.hl.hxml",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "build hl",
+            "type":"hxml",
+            "file": "build.hxml",
+        }
+
+    ]
+}

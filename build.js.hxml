@@ -1,0 +1,4 @@
+base.hxml
+-js bin/client.js
+-debug
+--times
