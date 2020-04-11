@@ -1,3 +1,15 @@
+#class path
 -cp src
+#libraries
 -lib heaps
--main src.Main
+-lib castle
+-lib domkit
+-lib hxbit
+-lib deepnightLibs
+#main entry file
+#-main Main
+#-main Domkit
+#-main Network
+#-main Base3D
+#-main MainTest00
+-main Boot

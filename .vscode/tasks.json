@@ -11,23 +11,45 @@
                 //"kind": "build",
                 //"isDefault": true
             //},
-            "problemMatcher": ["$haxe"]
+            "problemMatcher": [
+                "$haxe-absolute",
+                "$haxe",
+                "$haxe-error",
+                "$haxe-trace"
+            ],
         },
+
         {
             "label": "build.hl.hxml",
             "type": "shell",
             "command": "haxe build.hl.hxml",
+            //"group": {
+                //"kind": "build",
+                //"isDefault": true
+            //},
+            "problemMatcher": [
+                "$haxe-absolute",
+                "$haxe",
+                "$haxe-error",
+                "$haxe-trace"
+            ],
+        },
+        
+        {
+            "label": "Build HL",
+            "command":"haxe",
+            "args": ["build.hxml", "-debug"],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
-        },
-        {
-            "label": "build hl",
-            "type":"hxml",
-            "file": "build.hxml",
+            "problemMatcher": [
+                "$haxe-absolute",
+                "$haxe",
+                "$haxe-error",
+                "$haxe-trace"
+            ]
         }
-
+        
     ]
 }

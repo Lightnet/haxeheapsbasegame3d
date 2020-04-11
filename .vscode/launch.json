@@ -10,7 +10,6 @@
             "name": "Launch Chrome",
             "url": "file://${workspaceFolder}/bin/index.html",
             "webRoot": "${workspaceFolder}",
-
             "preLaunchTask": "build.js.hxml",
         },
 
@@ -20,7 +19,7 @@
 			"type": "hl",
 			"hxml": "build.hxml",
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": "build.hl.hxml",
+            "preLaunchTask": "Build HL",
 		}
     ]
 }

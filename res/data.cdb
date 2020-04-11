@@ -1,33 +1,76 @@
 {
 	"sheets": [
 		{
-			"name": "characters",
+			"name": "character",
 			"columns": [
 				{
-					"typeStr": "1",
-					"name": "id"
+					"name": "id",
+					"typeStr": "0"
 				},
 				{
-					"typeStr": "1",
-					"name": "name",
-					"opt": true
+					"name": "width",
+					"typeStr": "3"
 				},
 				{
-					"typeStr": "1",
-					"name": "gender",
-					"opt": true
+					"name": "height",
+					"typeStr": "3"
+				},
+				{
+					"name": "props",
+					"typeStr": "16"
+				},
+				{
+					"name": "tileProps",
+					"typeStr": "8"
+				},
+				{
+					"name": "layers",
+					"typeStr": "8"
 				}
 			],
 			"lines": [
 				{
-					"id": "0",
-					"name": "test",
-					"gender": "male"
+					"id": "MAP0",
+					"width": 128,
+					"height": 128,
+					"tileProps": [],
+					"layers": []
 				}
 			],
 			"separators": [],
-			"props": {}
+			"props": {
+				"level": {
+					"tileSets": {}
+				}
+			}
 		},
+		{
+			"name": "character@tileProps",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": []
+		},
+		{
+			"name": "character@layers",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"name": "name",
+					"typeStr": "1"
+				},
+				{
+					"name": "data",
+					"typeStr": "15"
+				}
+			]
+		}
 	],
 	"customTypes": [],
 	"compress": false

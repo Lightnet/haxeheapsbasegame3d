@@ -2,4 +2,5 @@
 bin/client.js.map
 bin/client.hl
 bin/client.js
+res/.tmp
 

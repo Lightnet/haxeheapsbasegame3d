@@ -1,0 +1,9 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"type": "box",
+			"name": "box"
+		}
+	]
+}
