@@ -11,7 +11,8 @@ class Game extends Process {
 	public var camera : Camera;
 	public var scroller : h2d.Layers;
 	public var level : Level;
-	public var hud : ui.Hud;
+	//public var hud : ui.Hud;
+	public var hud : ui.HudInGame;
 
 	public function new() {
 		super(Main.ME);
@@ -27,7 +28,8 @@ class Game extends Process {
 		camera = new Camera();
 		level = new Level();
 		fx = new Fx();
-		hud = new ui.Hud();
+		//hud = new ui.Hud();
+		hud = new ui.HudInGame();
 		trace(Lang.t._("init..."));
 		new en.Hero(5,5);
 
@@ -108,4 +110,5 @@ class Game extends Process {
 		}
 	}
 }
+
 

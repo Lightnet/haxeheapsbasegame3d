@@ -1,5 +1,22 @@
 package ui;
 
+/*
+@:uiComp("view")
+class SampleView extends h2d.Flow implements h2d.domkit.Object {
+
+    static var SRC = 
+        <view class="box" vertical> 
+            Hello World domkit! 
+            //<bitmap src={tile} public id="mybmp"/>
+        </view>
+
+    public function new(?parent) {
+        super(parent);
+        initComponent();
+    }
+}
+*/
+
 class Hud extends dn.Process {
 	public var game(get,never) : Game; inline function get_game() return Game.ME;
 	public var fx(get,never) : Fx; inline function get_fx() return Game.ME.fx;
@@ -14,6 +31,10 @@ class Hud extends dn.Process {
 		createRootInLayers(game.root, Const.DP_UI);
 
 		flow = new h2d.Flow(root);
+
+		//var view = new SampleView(flow);
+		//view.mybmp.alpha = 0.8;
+		trace("init hud");
 	}
 
 	override function onDispose() {
