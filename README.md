@@ -41,6 +41,11 @@ Work in progress test.
     haxelib install hlopenal
     haxelib install hlsdl
     haxelib git hide https://github.com/HeapsIO/hide
+
+    haxelib git bullet https://github.com/HeapsIO/bullet (doesn't work)
+    haxelib install haxebullet  (doesn't work)
+    haxelib git haxebullet https://github.com/armory3d/haxebullet (doesn't work)
+
 ```
 
  download hashlink
@@ -50,6 +55,8 @@ Work in progress test.
 haxe build.js.hxml // build browser js
 haxe build.hl.hxml // build application
 hl bin/client.hxml // run application
+
+haxe hide-plugin.hxml
 ```
 
 # Hide Editor:

@@ -1,3 +1,5 @@
+package examples;
+
 class SampleApp extends hxd.App {
 
 	var fui : h2d.Flow;

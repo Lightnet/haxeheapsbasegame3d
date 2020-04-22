@@ -5,11 +5,18 @@
 -lib castle
 -lib domkit
 -lib hxbit
+#-lib openfl
+-lib bullet
+#-lib haxebullet
+#-lib oimophysics
 -lib deepnightLibs
 #main entry file
+#-main Boot
+#-main ModelTest00
 #-main Main
 #-main Domkit
 #-main Network
 #-main Base3D
 #-main MainTest00
--main Boot
+#-main Skin
+-main TestPhysics01

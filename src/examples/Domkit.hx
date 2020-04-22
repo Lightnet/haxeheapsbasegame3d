@@ -1,4 +1,4 @@
-
+package examples;
 
 
 @:uiComp("view")

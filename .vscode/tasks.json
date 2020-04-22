@@ -38,7 +38,7 @@
         {
             "label": "Build HL",
             "command":"haxe",
-            "args": ["build.hxml", "-debug"],
+            "args": ["build.hxml"],
             "group": {
                 "kind": "build",
                 "isDefault": true

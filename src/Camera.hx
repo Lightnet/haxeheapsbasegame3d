@@ -44,6 +44,7 @@ class Camera extends dn.Process {
 
 		// Follow target entity
 		if( target!=null ) {
+			//trace("update camera");
 			var s = 0.006;
 			var deadZone = 5;
 			var tx = target.footX;

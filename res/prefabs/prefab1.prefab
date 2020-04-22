@@ -4,6 +4,11 @@
 		{
 			"type": "box",
 			"name": "box"
+		},
+		{
+			"type": "model",
+			"name": "Model",
+			"source": "Model.FBX"
 		}
 	]
 }

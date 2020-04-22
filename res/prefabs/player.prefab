@@ -1,0 +1,11 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"animation": "animemale0301.fbx",
+			"type": "model",
+			"name": "mesh",
+			"source": "animemale0301.fbx"
+		}
+	]
+}

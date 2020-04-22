@@ -1,12 +1,15 @@
 
 package ui;
 
+import h2d.Flow;
+
 @:uiComp("view")
 class SampleView extends h2d.Flow implements h2d.domkit.Object {
 
     static var SRC = 
         <view class="box" vertical> 
-            Hello World domkit! 
+            Hello World Domkit!
+            
             //<bitmap src={tile} public id="mybmp"/>
         </view>
 
@@ -18,15 +21,17 @@ class SampleView extends h2d.Flow implements h2d.domkit.Object {
 
 class HudInGame extends Hud{
 
+    public var view:Flow ;
     public function new() {
         super();
         
-        var view = new SampleView(flow);
+        view = new SampleView(flow);
 
     }
 
     override function onDispose() {
-		super.onDispose();
+        super.onDispose();
+        view.remove();
 	}
 
 }

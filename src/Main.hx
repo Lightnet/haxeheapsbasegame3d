@@ -35,8 +35,9 @@ class Main extends dn.Process {
 
             delayer.addS("cdb", function() {
             	Data.load( hxd.Res.data.entry.getBytes().toString() );
-            	if( Game.ME!=null )
-                    Game.ME.onCdbReload();
+            	if( Game.ME!=null ){
+					Game.ME.onCdbReload();
+				}
             }, 0.2);
         });
 		#end
@@ -67,11 +68,13 @@ class Main extends dn.Process {
 		if( Game.ME!=null ) {
 			Game.ME.destroy();
 			delayer.addF(function() {
-				new Game();
+				//new Game();
+				new GameBase();
 			}, 1);
 		}
 		else
-			new Game();
+			//new Game();
+			new GameBase();
 	}
 
 	override public function onResize() {

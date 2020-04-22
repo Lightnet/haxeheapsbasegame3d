@@ -2,7 +2,7 @@ import dn.Process;
 import hxd.Key;
 
 class Game extends Process {
-	static var INTRO_DONE = false;
+	//static var INTRO_DONE = false;
 
 	public static var ME : Game;
 	
@@ -11,8 +11,8 @@ class Game extends Process {
 	public var camera : Camera;
 	public var scroller : h2d.Layers;
 	public var level : Level;
-	//public var hud : ui.Hud;
-	public var hud : ui.HudInGame;
+	public var hud : ui.Hud;
+	//public var hud : ui.HudInGame;
 
 	public function new() {
 		super(Main.ME);
@@ -28,19 +28,20 @@ class Game extends Process {
 		camera = new Camera();
 		level = new Level();
 		fx = new Fx();
-		//hud = new ui.Hud();
-		hud = new ui.HudInGame();
-		trace(Lang.t._("init..."));
-		new en.Hero(5,5);
+		hud = new ui.Hud();
+		//hud = new ui.HudInGame();
+		//trace(Lang.t._("init..."));
+		//var hero =new en.Hero(5,5);
+		//camera.target = hero;
 
-		new en.Wall(10,10);
+		//new en.Wall(10,10);
 
 		#if !debug
-		if( !INTRO_DONE ) {
-			INTRO_DONE = true;
-			new ui.Intro();
-			trace(Lang.t._("Debug on?."));
-		}
+		//if( !INTRO_DONE ) {
+			//INTRO_DONE = true;
+			//new ui.Intro();
+			//trace(Lang.t._("Debug on?."));
+		//}
 		#end
 
 

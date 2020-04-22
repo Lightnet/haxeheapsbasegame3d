@@ -12,7 +12,7 @@ class Hero extends Entity {
 		g.beginFill(0xff0000);
         g.drawRect(0,0,16,16);
         
-        ca = Main.ME.controller.createAccess("hero"); // creates an instance of controller
+		ca = Main.ME.controller.createAccess("hero"); // creates an instance of controller
     }
     
     override function dispose() { // call on garbage collection
@@ -38,13 +38,13 @@ class Hero extends Entity {
 
 		if(ca.isKeyboardDown(hxd.Key.SPACE)){
 			//trace("test");
-			haxe.Log.trace("space");
-			trace("space");
+			//haxe.Log.trace("space");
+			//trace("space");
 		}
 
 		if(ca.isKeyboardDown(hxd.Key.LEFT)){
 			//trace("test");
-			haxe.Log.trace("Left");
+			//haxe.Log.trace("Left");
 		}
 
 		

@@ -1,3 +1,4 @@
+package examples;
 
 class Cursor implements hxbit.NetworkSerializable {
 

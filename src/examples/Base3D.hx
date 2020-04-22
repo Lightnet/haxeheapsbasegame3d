@@ -1,3 +1,5 @@
+package examples;
+
 import h3d.scene.*;
 
 class Base3D extends SampleApp {

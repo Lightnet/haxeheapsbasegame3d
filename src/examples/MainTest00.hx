@@ -1,4 +1,4 @@
-
+package examples;
 
 class MainTest00  {
     function init() {
