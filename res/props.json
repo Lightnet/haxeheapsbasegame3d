@@ -1,5 +1,6 @@
 {
 	"fs.convert" : {
 		"wav" : "mp3"
-	}
+	},
+	"plugins": ["../hide-plugin.js"]
 }

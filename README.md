@@ -65,6 +65,60 @@ haxe hide-plugin.hxml
  work in progress setup...
 
 
+## Folder layout:
+
+```
+/res
+    /props.json
+/src
+    /prefabs
+        /MyPrefab1.hx
+    /Hideimports.hx
+hide-plugin.hxml
+```
+props.json
+```
+{
+	"plugins": ["../hide-plugin.js"]
+}
+```
+This config help load prefabs for hide eidtor.
+
+Hideimports.hx
+```
+import prefabs.MyPrefab1;
+```
+
+hide-plugin.hxml
+```haxe
+# hide-plugin.hxml
+-cp src
+-lib hide
+-lib hxnodejs
+-lib deepnightLibs
+-lib castle
+--macro hide.Plugin.init()
+-js hide-plugin.js
+-debug
+HideImports
+```
+
+
+## commmand line:
+
+```
+haxe hide-plugin.hxml
+```
+Note if you find errors it will not show in hide editor.
+
+```
+//shader.AUTO_ALPHA = autoAlpha; // comment it out.
+```
+
+
+## Information:
+    It will show up in premade on the menu. Create new level3D. Right click > new > MyPrefab1.
+
 # Links:
  * https://www.youtube.com/watch?v=Nm4eFGE
  * https://www.gamefromscratch.com/post/2020/04/07/Shiros-Game-Technology-Stack.aspx

@@ -4,3 +4,5 @@ bin/client.hl
 bin/client.js
 res/.tmp
 
+hide-plugin.js
+hide-plugin.js.map

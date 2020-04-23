@@ -1,7 +1,8 @@
 # hide-plugin.hxml
-#-cp src
+-cp src
 -lib hide
-#-lib hxnodejs
+-lib hxnodejs
+-lib deepnightLibs
 #-lib castle
 --macro hide.Plugin.init()
 -js hide-plugin.js

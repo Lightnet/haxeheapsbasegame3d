@@ -34,6 +34,13 @@
 			"occlusionFactor": 0,
 			"type": "light",
 			"name": "light_0"
+		},
+		{
+			"x": -0.20846250032067548,
+			"y": 0.2643748199019127,
+			"z": 0.4999999999999991,
+			"type": "myprefab1",
+			"name": "myprefab1"
 		}
 	]
 }

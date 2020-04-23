@@ -1,3 +1,10 @@
+/**
+ * Project Name: Haxe Heaps Base Game 3D
+ * Created By: Ligthnet
+ * Information:
+ *  This script for heaps hide editor. To able to place hide editor premade.
+ */
+
 package prefabs;
 
 import hrt.prefab.Context;
@@ -9,9 +16,10 @@ class MyPrefab1 extends hrt.prefab.Object3D {
         super(parent);
         type = "myprefab1";
     }
-
+    
     override function make(ctx:Context):Context {
         var ret = super.make(ctx);
+        
         // Custom code...
         return ret;
     }
@@ -24,5 +32,6 @@ class MyPrefab1 extends hrt.prefab.Object3D {
 
     #end
 
-    static var _ = Library.register("myprefab1", MyPrefab);
+    static var _ = Library.register("myprefab1", MyPrefab1);
+    
 }

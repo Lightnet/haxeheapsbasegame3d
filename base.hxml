@@ -19,4 +19,7 @@
 #-main Base3D
 #-main MainTest00
 #-main Skin
--main TestPhysics01
+#-main examples.TestPhysics02
+#-main examples.TestPhysics03
+#-main examples.ModelTest01
+-main examples.ModelTest02
